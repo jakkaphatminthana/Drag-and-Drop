@@ -1,50 +1,17 @@
-body {
-    background-color:cadetblue;
-    margin: 0;
-    padding-left: 3%;
-}
-
-.empty {                                        
+.equip-slot {
+    background-color: rgb(37, 201, 250);
     display: inline-block;
-    height: 80px;
-    width: 80px;
-    margin: 0.2%;
-    border: 1px black solid;
-    background-color: white;
+    padding: 20px;
 }
 
-img {                                           
+.weapon-list {
+    background-color: lightgray;
     display: inline-block;
-    height: 80px;
-    width: 80px;
+    padding: 20px;
 }
 
-/* กล่องเนื้อหา Main */
-.container{                                     
-    display: grid;              /* รูปแบบตาราง */             
-    margin: 0;
-    width: 100vw;
-    height: 700px;
-    gap: 10px;                  /*ความห่าง*/
-    box-sizing: border-box;
-
-    grid-template-columns: 20% 10% 60% 10%;   /* สร้าง columns 4 อัน ซึ่งขนาดเรียงตามจากซ้ายไปขวา */    
-    grid-template-rows: repeat(5, 15%);       /* สร้าง row 5 อัน ซึ่งขนาดเท่ากันหมด 15% */    
-
-}
-
-/* กล่องเนื้อหา ซ้าย */
-.container-left{                                
-    grid-column: 1 / 1;     /*Start_col = 1 , End_col = 1*/
-    grid-row: 1 / 6;        /*Start_row = 1 , End_row = 6*/
-    
-
-}
-
-/* กล่องเนื้อหา ขวา */
-.container-right{                               
-    grid-column: 3 / 3;     /*Start_col = 3 , End_col = 3*/
-    grid-row: 1 / 6;        /*Start_row = 1 , End_row = 6*/
-    margin-top: 5%;
-    text-align: center;
+.equip-weapon,
+.weapon {
+    width: 120px;
+    height: 120px;
 }
