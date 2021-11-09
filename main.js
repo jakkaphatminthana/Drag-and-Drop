@@ -1,5 +1,5 @@
 const images = new Array(34).fill("").map((_, i) => `/image/${i + 1}.jpg`)
-const boxLength = 32;
+const boxLength = 28;
 
 const data = []
 

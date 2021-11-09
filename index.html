@@ -1,27 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>JavaScript DOM Drag & Drop Event | Zinglecode</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Design Graden</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  </link>
 
 </head>
-<body>
-  <h2>Select Weapon</h2>
-  <div>
-    <div class="equip-slot">
-      <img class="equip-weapon" src="/image/0.png">
-    </div>
-  </div>
-  <br>
-  <div>
-    <div class="weapon-list">
-      <img id="weapon-sword" class="weapon" src="/image/1.jpg" draggable="true">
-      <img id="weapon-crossbow" class="weapon" src="/image/2.jpg" draggable="true">
-      <img id="weapon-rifle" class="weapon" src="/image/3.jpg" draggable="true">
-    </div>
-  </div>
-  <script src="main.js"></script>
 
+<body>
+
+  <h1>Design Green Wall</h1>
+
+  <!--- กล่องที่เอาไว้ใส่ต้นไม้ลง -->
+  <div class="container">
+    <div class="container-right">
+      <div id="box-container">
+      </div>
+    </div>
+
+    <!-- กล่อง ซ้าย-บน -->
+    <div class="container-left-top">
+      <select class="dropdown" id="Size">
+        <option disabled selected>Size</option>
+        <option value=20> 20 Block (4x5) </option>
+        <option value=28> 28 Block (4x7) </option>
+        <option value=30> 30 Block (5x6) </option>
+        <option value=56> 56 Block (8x7) </option>
+      </select>
+      <br>
+      <select class="dropdown" id="Cost">
+        <option disabled selected>Cost</option>
+      </select>
+      <br>
+      <select class="dropdown" id="Function">
+        <option disabled selected>Function</option>
+      </select>
+      <br>
+
+      <button class="Button-design">Design</button>
+    </div>
+
+    <!-- กล่อง ซ้าย-ล่าง -->
+    <div class="container-left-bottom">
+      <div id="image-list">
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./main.js"></script>
 </body>
+
 </html>

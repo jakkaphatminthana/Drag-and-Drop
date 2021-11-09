@@ -1,6 +1,7 @@
 body {
     background-color: cadetblue;
     margin-left: 3% ;
+    font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -30,7 +31,7 @@ body {
 
 .container-left-bottom {
     grid-column: 1 / 1;     /*Start_col = 1 , End_col = 1*/
-    grid-row: 3 / 4;        /*Start_row = 1 , End_row = 6*/
+    grid-row: 2 / 4;        /*Start_row = 1 , End_row = 6*/
 }
 
 .container-left-top {
@@ -57,11 +58,30 @@ body {
     margin-left: 3px;
 }
 
-.button1 {
-    
-    border: 1px solid white;
-    padding: 14px 20px;
-    margin: 8px 0;
+.dropdown {
+    padding-left: 3%;
+    margin-top: 2%;
+    width: 70%;
+    height: 18%;
+    border-radius: 9px;
+    border: 1px gainsboro solid;
     cursor: pointer;
-    width: 100%;
+    font-size:18px;
+}
+
+.dropdown:focus,
+.dropdown:hover {
+    outline: 0;
+    border: 2px gray solid;
+}
+
+.dropdown option {
+    background: #ffffff;
+}
+
+button {
+    margin-top: 3%;
+    width: 20%;
+    height: 15%;
+    border-radius: 9px;
 }
