@@ -1,17 +1,67 @@
-.equip-slot {
-    background-color: rgb(37, 201, 250);
-    display: inline-block;
-    padding: 20px;
+body {
+    background-color: cadetblue;
+    margin-left: 3% ;
 }
 
-.weapon-list {
-    background-color: lightgray;
-    display: inline-block;
-    padding: 20px;
+.container {
+    display: grid;              /* รูปแบบตาราง */             
+    margin: 0;
+    width: 100vw;
+    height: 700px;
+    gap: 10px;                  /*ความห่าง*/
+    box-sizing: border-box;
+
+    grid-template-columns: 30% 5% 60% 10%;   /* สร้าง columns 4 อัน ซึ่งขนาดเรียงตามจากซ้ายไปขวา */    
+    grid-template-rows: repeat(4, 30%);       /* สร้าง row 5 อัน ซึ่งขนาดเท่ากันหมด 15% */    
 }
 
-.equip-weapon,
-.weapon {
-    width: 120px;
-    height: 120px;
+.container-left {
+    grid-column: 1 / 1;     /*Start_col = 1 , End_col = 1*/
+    grid-row: 1 / 4;        /*Start_row = 1 , End_row = 4*/
+}
+
+.container-right {
+    margin:0.5px;
+    grid-column: 3 / 3;     /*Start_col = 3 , End_col = 3*/
+    grid-row: 1 / 4;        /*Start_row = 1 , End_row = 6*/
+    margin-top: 5%;
+    text-align: center;
+}
+
+.container-left-bottom {
+    grid-column: 1 / 1;     /*Start_col = 1 , End_col = 1*/
+    grid-row: 3 / 4;        /*Start_row = 1 , End_row = 6*/
+}
+
+.container-left-top {
+    grid-column: 1 / 1;     /*Start_col = 1 , End_col = 1*/
+    grid-row: 1 / 2;        /*Start_row = 1 , End_row = 6*/
+}
+
+.box {
+    display: inline-block;
+    text-align: center;
+    margin: 0.5px;
+}
+
+.box img{
+    width: 90px;
+    height: 90px;
+    border: 2px black solid;
+}
+
+#image-list img {
+    width: 80px;
+    height: 80px;
+    border: 1px black solid;
+    margin-left: 3px;
+}
+
+.button1 {
+    
+    border: 1px solid white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
 }
