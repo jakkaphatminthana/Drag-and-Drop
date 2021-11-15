@@ -1,7 +1,15 @@
 body {
-    background-color: cadetblue;
+    background-image: url('green-leave-.jpg');
     margin-left: 3% ;
     font-family: 'Lato', sans-serif;
+}
+.H{
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    color:aliceblue;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
 }
 
 .container {
@@ -9,9 +17,8 @@ body {
     margin: 0;
     width: 100vw;
     height: 700px;
-    gap: 10px;                  /*ความห่าง*/
+    gap: 30px;                  /*ความห่าง*/
     box-sizing: border-box;
-
     grid-template-columns: 30% 5% 60% 10%;   /* สร้าง columns 4 อัน ซึ่งขนาดเรียงตามจากซ้ายไปขวา */    
     grid-template-rows: repeat(4, 30%);       /* สร้าง row 5 อัน ซึ่งขนาดเท่ากันหมด 15% */    
 }
@@ -22,7 +29,7 @@ body {
 }
 
 .container-right {
-    margin:0.5px;
+    margin:0.05px;
     grid-column: 3 / 3;     /*Start_col = 3 , End_col = 3*/
     grid-row: 1 / 4;        /*Start_row = 1 , End_row = 6*/
     margin-top: 5%;
@@ -30,8 +37,10 @@ body {
 }
 
 .container-left-bottom {
+    width: 300px;      /*กำหนดเพราะ scrollbar จะไม่สวย*/
     grid-column: 1 / 1;     /*Start_col = 1 , End_col = 1*/
     grid-row: 2 / 4;        /*Start_row = 1 , End_row = 6*/
+    overflow-x: scroll;    /* scrollbar */
 }
 
 .container-left-top {
@@ -43,19 +52,20 @@ body {
     display: inline-block;
     text-align: center;
     margin: 0.5px;
+    border: 1px  black;
 }
 
 .box img{
     width: 90px;
     height: 90px;
-    border: 2px black solid;
+    
 }
 
 #image-list img {
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 65px;
     border: 1px black solid;
-    margin-left: 3px;
+    /* ชิดทางด้านขว้า */
 }
 
 .dropdown {

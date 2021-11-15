@@ -16,8 +16,10 @@
 </head>
 
 <body>
+  <div class="H">
+    <h1>Design Green Wall</h1>
 
-  <h1>Design Green Wall</h1>
+  </div>
 
   <!--- กล่องที่เอาไว้ใส่ต้นไม้ลง -->
   <div class="container">
@@ -28,7 +30,7 @@
 
     <!-- กล่อง ซ้าย-บน -->
     <div class="container-left-top">
-      <select class="dropdown" id="Size">
+      <select class="dropdown" id="Size">                 <!-- Size -->
         <option disabled selected>Size</option>
         <option value=20> 20 Block (4x5) </option>
         <option value=28> 28 Block (4x7) </option>
@@ -36,16 +38,16 @@
         <option value=56> 56 Block (8x7) </option>
       </select>
       <br>
-      <select class="dropdown" id="Cost">
+      <select class="dropdown" id="Cost">               <!-- Cost -->
         <option disabled selected>Cost</option>
       </select>
       <br>
-      <select class="dropdown" id="Function">
+      <select class="dropdown" id="Function">           <!-- Function -->
         <option disabled selected>Function</option>
       </select>
       <br>
 
-      <button class="Button-design">Design</button>
+      <button class="Button-design" onclick="getSelectValue();">Design</button>     <!-- Confrim button -->
     </div>
 
     <!-- กล่อง ซ้าย-ล่าง -->
