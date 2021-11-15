@@ -18,7 +18,7 @@ const init = () => {
     /// สร้างเป็น list เอาไว้ เพื่อไป interetive
     images.forEach((e, i) => {
         IMAGE_LSIT.innerHTML += `<img class="image-pick" id="pick-${i + 1}" src="${e}" />`
-        if (++i % 4 == 0) {
+        if (++i % 5 == 0) {
             IMAGE_LSIT.innerHTML += `<br>`
         }
     })
