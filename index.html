@@ -16,16 +16,15 @@
 </head>
 
 <body>
-  <div class="H">
-    <h1>Design Green Wall</h1>
 
-  </div>
-
-  <!--- กล่องที่เอาไว้ใส่ต้นไม้ลง -->
   <div class="container">
+    <div class="H"><h1>Design Green Wall</h1></div>
+    <hr class="line">
+
+    <!--- กล่องที่เอาไว้ใส่ต้นไม้ลง -->
     <div class="container-right">
-      <div id="box-container">
-      </div>
+      <div id="box-container"></div>
+      <input class="Design-submit" type="submit" name="" value="Design">
     </div>
 
     <!-- กล่อง ซ้าย-บน -->
@@ -46,13 +45,16 @@
         <option disabled selected>Function</option>
       </select>
       <br>
-
       <button class="Button-design" onclick="getSelectValue();">Design</button>     <!-- Confrim button -->
     </div>
 
     <!-- กล่อง ซ้าย-ล่าง -->
+    <div class="search">                                    <!-- Search -->
+        <input class="search-input" type="text" name="" placeholder="ค้นหา...">
+        <input class="search-submit" type="submit" name="" value="Search">
+    </div>
     <div class="container-left-bottom">
-      <div id="image-list">
+      <div id="image-list">                               <!-- Tree Pick -->
       </div>
     </div>
 
