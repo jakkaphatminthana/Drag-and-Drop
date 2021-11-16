@@ -187,4 +187,5 @@ body {
     border: none;
     outline: none;
     background-color: rgb(236, 214, 14);
+    cursor: pointer;
 }
