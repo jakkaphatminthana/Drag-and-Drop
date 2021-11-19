@@ -18,50 +18,70 @@
 <body>
 
   <div class="container">
-    <div class="H"><h1>Design Green Wall [Demo]</h1></div>
+    <div class="H">
+      <h1>Design Green Wall</h1>
+    </div>
     <hr class="line">
 
     <!--- กล่องที่เอาไว้ใส่ต้นไม้ลง -->
     <div class="container-right">
-      <div id="box-container"></div>
-      <a href="design.html"><input class="Design-submit" type="submit" name="" value="Design"></a>
+      <img class="box-form" src="empty.png">
+      <div class="group-box">
+        <div id="box-container"></div>
+      </div>
     </div>
 
     <!-- กล่อง ซ้าย-บน -->
     <div class="container-left-top">
-      <select class="dropdown" id="Size">                 <!-- Size -->
+      <select class="dropdown" id="Size">
+        <!-- Size -->
         <option disabled selected>Size</option>
         <option value=20> 20 Block (4x5) </option>
         <option value=28> 28 Block (4x7) </option>
         <option value=30> 30 Block (5x6) </option>
         <option value=56> 56 Block (8x7) </option>
       </select>
-      <br>
-      <select class="dropdown" id="Cost">               <!-- Cost -->
-        <option disabled selected>Cost</option>
-      </select>
-      <br>
-      <select class="dropdown" id="Function">           <!-- Function -->
+     
+      <select class="dropdown" id="Function">
+        <!-- Function -->
         <option disabled selected>Function</option>
       </select>
       <br>
-      <button class="Button-design" onclick="getSelectValue();">Change</button>     <!-- Confrim button -->
+      <button class="Button-design" onclick="test();">Change</button> <!-- Confrim button -->
     </div>
 
     <!-- กล่อง ซ้าย-ล่าง -->
-    <div class="search">                                    <!-- Search -->
-        <input class="search-input" type="text" name="" placeholder="ค้นหา...">
-        <input class="search-submit" type="submit" name="" value="Search" >
+    <div class="search">
+      <!-- Search -->
+      <input class="search-input" type="text" id="search" name="" placeholder="ค้นหา...">
+      <input class="search-submit" type="submit" name="" value="Search" id="search-btn">
+      <select name="" id="select-cate">
+
+        <option value="">เลือกหมวดหมู่ต้นไม้</option>
+        <option value="1">การเงิน</option>
+        <option value="2">การงาน</option>
+        <option value="3">ความรัก</option>
+        <option value="4">สุขภาพ</option>
+        <option value="5">โชคลาภ</option>
+        
+      </select>
     </div>
     <div class="container-left-bottom">
-      <div id="image-list">                               <!-- Tree Pick -->
+      <div id="image-list">
+        <!-- Tree Pick -->
       </div>
     </div>
-
+    <input class="Design-submit" type="submit" onclick = "BoxChingSize()" name="" value="Design" >  <!-- BTN Design -->
     <div class="bg-black"></div>
   </div>
-
+  <div class="molPic" id = "modal"> Pic </div>
+  <!-- Scripts -->
+  
+  <script src="./db/cate.js"></script>
+  <script src="./db/plants.js"></script>
   <script src="./main.js"></script>
+  <script src='./control.js'></script>
+    
 </body>
 
 </html>
